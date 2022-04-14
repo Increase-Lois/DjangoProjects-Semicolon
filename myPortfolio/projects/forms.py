@@ -4,5 +4,5 @@ from .models import Project
 class ProjectForm(forms.ModelForm):
     class Meta:
         model = Project
-        fields = ['id', 'title', 'description', 'technology' ,'image']
+        fields = ['id', 'title', 'description', 'technology' ,]
         # exclude = ['image','title']

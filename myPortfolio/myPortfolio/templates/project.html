@@ -4,7 +4,8 @@
 {% block page_content %}
 <h1>Jibola, ma pa mi nau!!!</h1>
 <br>
-<form action = "">
+<form action = "" method="post">
+    {%csrf_token %}
     {{form.as_p}}
     <button type ="submit">Submit</button>
 </form>
